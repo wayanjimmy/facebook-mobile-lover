@@ -1,22 +1,22 @@
 chrome.webRequest.onBeforeRequest.addListener(details => {
-    if (details.method !== 'GET') {
-        return;
-    }
+  if (details.method !== 'GET') {
+    return;
+  }
 
-    const url = new URL(details.url);
+  const url = new URL(details.url);
 
-    url.hostname = 'm.facebook.com';
+  url.hostname = 'm.facebook.com';
 
-    return {
-        redirectUrl: url.href
-    };
+  return {
+    redirectUrl: url.href
+  };
 }, {
-    urls: [
-        'https://www.facebook.com/*'
-    ],
-    types: [
-        'main_frame'
-    ]
+  urls: [
+    'https://www.facebook.com/*'
+  ],
+  types: [
+    'main_frame'
+  ]
 }, [
-    'blocking'
+  'blocking'
 ]);

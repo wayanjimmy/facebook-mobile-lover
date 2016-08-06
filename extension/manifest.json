@@ -1,20 +1,21 @@
 {
-    "name": "Facebook Mobile Lover",
-    "version": "0.1.0",
-    "description": "Enforces mobile web version of Facebook",
-    "manifest_version": 2,
-    "minimum_chrome_version": "50",
-    "permissions": [
-        "webRequest",
-        "webRequestBlocking",
-        "https://www.facebook.com/*"
-    ],
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
-    "icons": {
-        "128": "icon.png"
-    }
+  "name": "Facebook Mobile Lover",
+  "version": "0.1.0",
+  "description": "Enforces mobile web version of Facebook",
+  "homepage_url": "https://github.com/wayanjimmy/facebook-mobile-lover",
+  "manifest_version": 2,
+  "minimum_chrome_version": "50",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://www.facebook.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "icons": {
+    "128": "icon.png"
+  }
 }
